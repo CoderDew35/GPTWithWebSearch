@@ -53,7 +53,7 @@ export async function getChatCompletion(
     
     
     const completion = await client.chat.completions.create({
-      model: 'gpt-4-turbo',
+      model: 'gpt-4o-mini',
       messages,
       temperature: 0.7,
       tools,
