@@ -108,7 +108,7 @@ export async function getChatCompletion(
 
         logger.info("Getting final response with search results");
         const finalCompletion = await client.chat.completions.create({
-          model: 'gpt-4-turbo',
+          model: 'gpt-4o-mini',
           messages: updatedMessages,
           temperature: 0.7,
         });
